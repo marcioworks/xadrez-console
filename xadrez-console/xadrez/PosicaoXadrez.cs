@@ -11,6 +11,8 @@ namespace xadrez {
             this.coluna = coluna;
             this.linha = linha;
         }
+
+        //metodo para transformar a posição das casas em matriz. 
         public Posicao toPosicao() {
             return new Posicao(8 - linha, coluna - 'a');
         }

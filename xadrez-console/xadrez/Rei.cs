@@ -18,10 +18,10 @@ namespace xadrez {
         public override bool[,] movimentosPossiveis() {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
-            Posicao pos = new Posicao(0, 0);
+            Posicao pos = new Posicao(0,0);
 
             //acima
-            pos.definirValores(pos.linha - 1, pos.coluna);
+            pos.definirValores(pos.linha -1, pos.coluna);
             if(tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
             }

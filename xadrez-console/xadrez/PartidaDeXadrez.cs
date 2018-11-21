@@ -77,7 +77,7 @@ namespace xadrez {
         }
 
         public void validarPosicaoDeDestino(Posicao origem, Posicao destino) {
-            if (!tab.peca(origem).podeMover(destino)) {
+            if (!tab.peca(origem).movimentoPossivel(destino)) {
                 throw new TabuleiroException("Posicao de Destino invalida.");
             }
         }

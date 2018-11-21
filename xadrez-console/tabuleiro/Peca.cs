@@ -33,7 +33,7 @@ namespace tabuleiro {
             qtdMovimentos--;
         }
 
-        public bool podeMover(Posicao pos) {
+        public bool movimentoPossivel(Posicao pos) {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
         public abstract bool[,] movimentosPossiveis();
